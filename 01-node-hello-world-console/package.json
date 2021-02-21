@@ -1,0 +1,25 @@
+{
+  "name": "01-node-hello-world-console",
+  "version": "1.0.0",
+  "description": "This repo have diferente project in node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falconsoft3d/node-hello-world.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/falconsoft3d/node-hello-world/issues"
+  },
+  "homepage": "https://github.com/falconsoft3d/node-hello-world#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^2.0.7"
+  }
+}
