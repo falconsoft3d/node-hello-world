@@ -4,7 +4,7 @@ This repo have diferente project in node
 # 01-node-hello-world
 This simple console app
 ```
-git clon git@github.com:falconsoft3d/node-hello-world.git
+git clone git@github.com:falconsoft3d/node-hello-world.git
 cd 01-node-hello-world-console
 npm install
 npm run start
@@ -21,7 +21,7 @@ this application uses these modules
 # 02-node-hello-world-web
 This simple web http app
 ```
-git clon git@github.com:falconsoft3d/node-hello-world.git
+git clone git@github.com:falconsoft3d/node-hello-world.git
 cd 02-node-hello-world-web
 npm install
 npm run dev
