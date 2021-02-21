@@ -10,6 +10,8 @@ npm install
 npm run start
 ```
 
+![Alt text](https://github.com/falconsoft3d/node-hello-world/blob/main/img/01-node-hello-world-console.png?raw=true "Node")
+
 # My contact data
 ```
 Marlon Falcón Hernández | España | Madrid
