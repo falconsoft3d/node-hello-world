@@ -9,6 +9,11 @@ cd 01-node-hello-world-console
 npm install
 npm run start
 ```
+this application uses these modules
+```
+"colors": "^1.4.0",
+"nodemon": "^2.0.7"
+```
 
 ![Alt text](https://github.com/falconsoft3d/node-hello-world/blob/main/img/01-node-hello-world-console.png?raw=true "Node")
 
