@@ -33,6 +33,23 @@ this application uses these modules
 ![Alt text](https://github.com/falconsoft3d/node-hello-world/blob/main/img/02-node-hello-world-web.png?raw=true "Node")
 
 
+# 03-node-hello-world-web-express-bootstrap
+This simple web http app
+```
+git clone git@github.com:falconsoft3d/03-node-hello-world-web-express-bootstrap.git
+cd 03-node-hello-world-web-express-bootstrap
+npm install
+npm run dev
+```
+this application uses these modules
+```
+"express": "^4.17.1",
+"hbs": "^4.1.1",
+"nodemon": "^2.0.7"
+```
+![Alt text](https://github.com/falconsoft3d/node-hello-world/blob/main/img/03-node-hello-world-web-express-bootstrap.png?raw=true "Node")
+
+
 # My contact data
 ```
 Marlon Falcón Hernández | España | Madrid
