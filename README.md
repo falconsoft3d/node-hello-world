@@ -14,7 +14,7 @@ Marlon Falcón Hernández | España | Madrid
 » linkedin: https://linkedin.com/in/marlon-falcón-3a2aa9a4
 ```
 
-# Telegram public Group
+# Telegram public group
 ```
 https://t.me/node_spain
 ```
