@@ -17,6 +17,22 @@ this application uses these modules
 
 ![Alt text](https://github.com/falconsoft3d/node-hello-world/blob/main/img/01-node-hello-world-console.png?raw=true "Node")
 
+
+# 02-node-hello-world-web
+This simple web http app
+```
+git clon git@github.com:falconsoft3d/node-hello-world.git
+cd 02-node-hello-world-web
+npm install
+npm run dev
+```
+this application uses these modules
+```
+"nodemon": "^2.0.7"
+```
+![Alt text](https://github.com/falconsoft3d/node-hello-world/blob/main/img/02-node-hello-world-web.png?raw=true "Node")
+
+
 # My contact data
 ```
 Marlon Falcón Hernández | España | Madrid
