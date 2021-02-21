@@ -4,6 +4,7 @@ This repo have diferente project in node
 # 01-node-hello-world
 This simple console app
 ```
+npm install
 git clon git@github.com:falconsoft3d/node-hello-world.git
 cd 01-node-hello-world-console
 npm run start
