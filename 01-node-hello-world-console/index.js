@@ -8,4 +8,4 @@ let nameUser = 'Marlon'
 console.clear();
 
 // print in console Hello World
-console.log(`Hello World ${nameUser}`.green);
+console.log(`Hello World ${nameUser}`.red);
