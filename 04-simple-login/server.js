@@ -48,23 +48,28 @@ app.get("/", (req, res, next) =>{
     }
     res.redirect("/login");
 }  ,(req,res) =>{
-    // Si ya iniciamos seccion, bienvenida.
-
-    // Si no iniciamos, reirigimos al login.
-    res.send("Hola Mundo");
+    var user = '';
+    if(req.session.passport.user !== undefined) user = req.user.username;
+    res.render('index', {title: user});
+    // res.render("index");
+    //res.redirect('/'); 
 });
 
 app.get("/login", (req,res) =>{
    res.render("login");
 });
 
-app.get("/close", (req,res) =>{
-    res.send("close");
- });
+app.get('/logout', function(req, res){
+    req.logout();
+    res.redirect('/login'); //Can fire before session is destroyed?
+  });
 
 app.post("/login", passport.authenticate('local',{
     successRediret: "/",
     failureRedirect: "/login"
-}));
+},
+console.log("app.post")
+));
 
-app.listen(8000,() => console.log("Server Started"));
+const port = process.env.PORT || 8080;
+app.listen(port, () => console.log('App listening on port ' + port));
