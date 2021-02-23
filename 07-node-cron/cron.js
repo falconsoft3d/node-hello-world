@@ -1,9 +1,16 @@
+var dateFormat = require('dateformat');
 const cron = require("node-cron");
+const colors = require("colors");
 
 cron.schedule('* * * * * *', () => {
-    let ts = Date.now();
-    console.log('running a task every minute: ', ts);
-  });
+    var day=dateFormat(new Date(), "yyyy-mm-dd h:MM:ss");
+    console.log('1- running a task every second: ', day.green);
+});
+
+cron.schedule('2 * * * * *', () => {
+    var day=dateFormat(new Date(), "yyyy-mm-dd h:MM:ss");
+    console.log('2- running a task every tow second: ', day.yellow);
+});
 
 
 /*
