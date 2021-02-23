@@ -21,13 +21,7 @@ app.use(passport.session());
 
 passport.use(new PassportLocal( function(username, password, done) {
     console.log('Iniciando');
-    if(username === 'admin' && password === 'x1234567890' ){
-        console.log("if ok");
-        return done(null, {  id:1, name: 'Marlon' });
-    }
-    else{
-        console.log("if no ok");
-    }
+    if(username === 'admin' && password === 'x1234567890' ) return done(null, {  id:1, name: 'Marlon' });
     done(null,false);
 }));
 
@@ -60,12 +54,10 @@ app.get('/logout', function(req, res){
     res.redirect('/login'); //Can fire before session is destroyed?
   });
 
-app.post("/login", passport.authenticate('local',{
-    successRediret: "/",
-    failureRedirect: "/login"
-},
-console.log("app.post")
-));
+
+app.post('/login',
+passport.authenticate('local', { successRedirect: '/',
+                                   failureRedirect: '/login' }));
 
 const port = process.env.PORT || 8080;
 app.listen(port, () => console.log('App listening on port ' + port));
