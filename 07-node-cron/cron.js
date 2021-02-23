@@ -7,12 +7,6 @@ cron.schedule('* * * * * *', () => {
     console.log('1- running a task every second: ', day.green);
 });
 
-cron.schedule('2 * * * * *', () => {
-    var day=dateFormat(new Date(), "yyyy-mm-dd h:MM:ss");
-    console.log('2- running a task every tow second: ', day.yellow);
-});
-
-
 /*
 
  # ┌────────────── second (optional)
