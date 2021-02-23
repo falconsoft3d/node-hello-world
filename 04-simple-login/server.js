@@ -43,16 +43,12 @@ app.set('view engine', 'ejs');
 
 app.get("/", (req, res, next) =>{
     if( req.isAuthenticated() ){
-        console.log(req.name);
         return next();
+        console.log("if( req.isAuthenticated() ){:::: SI");
     }
     res.redirect("/login");
 }  ,(req,res) =>{
-    var user = '';
-    if(req.session.passport.user !== undefined) user = req.user.username;
-    res.render('index', {title: user});
-    // res.render("index");
-    //res.redirect('/'); 
+    res.render('index');
 });
 
 app.get("/login", (req,res) =>{
